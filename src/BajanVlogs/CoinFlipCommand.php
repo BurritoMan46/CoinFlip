@@ -4,6 +4,7 @@ namespace BajanVlogs;
 
 
 use onebone\economyapi\EconomyAPI;
+use pocketmine\command\command;
 use pocketmine\command\CommandSender;
 use pocketmine\command\defaults\VanillaCommand;
 use pocketmine\Player;
