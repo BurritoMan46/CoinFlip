@@ -93,9 +93,3 @@ class CoinFlipCommand extends VanillaCommand {
 					}
 					break;
 			}
-		} else {
-			$sender->sendMessage("USAGE: /cf <player> <betMoney> | /cf <accept/deny>");
-		}
-		return true;
-	}
-}
