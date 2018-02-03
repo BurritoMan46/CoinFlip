@@ -1,8 +1,8 @@
 <?php
 
-namespace BajanVlogs;
+namespace BajanVlogs/CoinFlip;
 
-
+use pocketmine\server;
 use onebone\economyapi\EconomyAPI;
 use pocketmine\command\command;
 use pocketmine\command\CommandSender;
