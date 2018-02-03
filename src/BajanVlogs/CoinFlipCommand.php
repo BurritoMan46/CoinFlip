@@ -94,3 +94,9 @@ class CoinFlipCommand extends PluginBase{
 					}
 					break;
 			}
+                } else {
+			$sender->sendMessage("USAGE: /cf <player> <betMoney> | /cf <accept/deny>");
+		}
+		return true;
+	}
+}
