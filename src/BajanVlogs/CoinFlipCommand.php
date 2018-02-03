@@ -2,25 +2,25 @@
 
 namespace BajanVlogs/CoinFlip;
 
-use pocketmine\server;
+use pocketmine\Player;
+use pocketmine\Server;
 use onebone\economyapi\EconomyAPI;
 use pocketmine\command\command;
 use pocketmine\command\CommandSender;
-use pocketmine\command\defaults\VanillaCommand;
-use pocketmine\Player;
+use pocketmine\plugin/pluginBase;
 use pocketmine\utils\TextFormat;
 
-class CoinFlipCommand extends VanillaCommand {
+class CoinFlipCommand extends PluginBase{
 	public function __construct($name){
 		parent::__construct(
 			$name,
 			"CoinFlip",
 			"/cf <player> <BetMoney> | /cf <accept/deny>");
 	}
-	public function execute(CommandSender $sender, string $commandLabel, array $args){
-		if(!($sender instanceof Player)){
+	public function onCommand(CommandSender $sender, Command $cmd, String $label, array $args): bool{
+		if(!($sender instanceof Player){
 			$sender->sendMessage("You must run this command in-game.");
-			return false;
+			return true;
 		}
 
 		array $args[0] = strtolower(array $args[0]);
